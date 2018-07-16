@@ -6,27 +6,27 @@
     padding-top:50px;
     height:500px;
     color: #fff; 
-    background-color:rgb(78,2,0);
+    background-color:rgb(62,116,121);
     font-size:25px;
 }
 #section2 {
     padding-top:50px;
     height:500px;
     color: #fff; 
-    background-color:  rgb(196,4,11);
+    background-color:  rgb(110,144,232);
     font-size: 16px;
 }
 #section3 {
     padding-top:50px;
     height:500px;
     color: #fff; 
-    background-color: rgb(255,15,25);
+    background-color: rgb(128,61,255);
     font-size:25px;
 }
 
 
 i{
-    color:red;
+    color:white;
     font-size:20px;
 }
 
@@ -41,32 +41,11 @@ i{
 }
 #house{
     font-size:25px;
+    margin: auto;
     
 }
-
-#house:hover{
-    font-size:30px;
+#btnColor{
+    background-color: black;
+    margin:auto;
+    border-radius:20px;
 }
-
-.sign{
-    color:white;
-    font-size:25px;
-}
-.sign:hover{
-    font-size:30px;
-    text-shadow: 5px 2px #2e1c1c;
-}
-
-.word{
-    font-size:20px;
-    color:white;
-}
-.word:hover{
-    font-size:24px;
-    text-shadow: 5px 5px white;
-    color:white;
-}
-a{
-    text-decoration: none;
-}
-

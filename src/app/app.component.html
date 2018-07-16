@@ -1,5 +1,6 @@
-<div class="container-fluid" style="background-color:rgb(61,61,61);color:#fff;height:200px;">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div *ngIf="switchService.changeOne == 1">
+<div class="container-fluid" style="background-color:rgb(61,61,61);color:#fff;height:200px;" >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -41,7 +42,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <i class="fas fa-caret-square-down"></i>                        
         </button>
-        <a class="navbar-brand" href="#"><i class="fas fa-home" id="house"></i> </a>
+        <a class="navbar-brand" href="#"><i class="fas fa-arrow-alt-circle-up" id="house"></i> </a>
       </div>
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -59,8 +60,9 @@
     <h1><u>Introduction</u></h1>
      <p>Hello, welcome to my website.I'll start off by introducing myself, my name is 
        Jose Ramirez and this is a website I build to show off my achievement and see if 
-       I can caught your interest. I design this web page in sections, the first, which is this one you are on, is the introduction, 
-       then the second is talking about myself and my abilities, and in the final section are ways to contact me.
+       I can catch your interest. I design this web page in sections, the first, which is this one you are on, is the introduction, 
+       then the second is talking about myself and my abilities, and in the final section are ways to contact me. There are links
+       that provide more information about myself and my work, feel free to click on any.
      </p>
   </div>
   <div id="section2" class="container-fluid">
@@ -69,28 +71,31 @@
       Mr.Chagoyan, my teacher at that time, was teaching html and css on notepad ++ and then we move on from notepad to use dreamweaver.
       After finishing my first web design class I took a second and pretty much
         we used the same html and css but we focus more on design rather than code. And in my final year of high school
-      I took a class on computer program which taught java and javascript. After that I took some CIS classes in college which 
+      I took a class on computer program which taught javascript, jQuery and java. After that I took some CIS classes in college which 
       provide more information on html and css. I took that class for one semester, which is half a year, then I took the second part
       which was more css and html but a little more difficult. </p>
        <p> There was four parts to that class but I only took 2 then I began focusing 
       in a BitWise program that the school was providing. From the program I gain knowledge on html,css, javascript, jQuery,
     bootstrap and angular 2. Sooner or later, I will have knowledge on wordpress. I also continue to study on my own since 
-  there is so much code to learn from. Below there are some links to my projects.. </p>
-            <i class="fab fa-github-square"></i>
+  there is so much code to learn from. Below there are some links to my projects. </p>
+           <div class="col-xs-6"><i class="fab fa-github-square sign"></i></div> 
+            <div class="col-xs-6 word"><a (click)="previousWork()">Previous Work</a></div>
     
   </div>
   <div id="section3" class="container-fluid">
     <h1><u>Contact</u></h1>
-    <p>To contact me, I am usually on my gmail or slack so that would be the best way to contact me.
-      but I will provide other source if these are inconvenient.
+    <p>To contact me, I am usually on my gmail or slack so that would be the best way to get in touch.
+      But I will provide other source if these are inconvenient.
 
     </p>
     <div class="row">
-        <div class="col-xs-6"><i class="fab fa-slack"></i></div>
+        <div class="col-xs-4"><a href="https://www.linkedin.com/in/jose-ramirez-544764160/"><i class="fab fa-linkedin sign"></i></a></div>
         
-        <div class="col-xs-6"><i class="fab fa-linkedin"></i></div>
+        <div class="col-xs-4"><a href="https://geekwise.slack.com/messages/D9FQQ17EV/"><i class="fab fa-slack sign"></i></a></div>
+
+        <div class="col-xs-4 word"><a>Other Contact</a></div>
     </div>
     
   </div>
-  
-  
+</div>
+  <past-work *ngIf="switchService.changeOne === 2"></past-work>
