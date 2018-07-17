@@ -55,6 +55,7 @@ i{
 .sign:hover{
     font-size:30px;
     text-shadow: 5px 2px #2e1c1c;
+    cursor: pointer;
 }
 
 .word{
@@ -65,8 +66,10 @@ i{
     font-size:24px;
     text-shadow: 5px 5px white;
     color:white;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
+
 }
 
